@@ -16,23 +16,29 @@ header {
   text-align: center;
   border-bottom: 1px solid #ccc;
   margin: 0;
-  background-color: teal;
+  background-color: lightgreen;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: white;
   padding: 20px;
-  border: 1px solid #ccc;
-  gap: 2rem;
+  /* border: 1px solid #ccc; */
+  gap: 1.5rem;
   margin: 0;
-  text-align: center;
 }
 
 section {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: lightgreen;
+  background-color: lightgray;
+  position: relative;
+}
+
+.quiz-box {
   position: relative;
 }
 
@@ -41,6 +47,51 @@ section {
   color: white;
   padding: 10px;
   border-radius: 5px;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  flex-direction: row;
+  bottom: 1rem;
+  left: 0px;
+  gap: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bookmark {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  color: crimson;
+  top: -1rem;
+  right: -1rem;
+  background-color: black;
+}
+
+section button:hover {
+  background-color: orange;
 }
 
 /* .logo { */
@@ -63,8 +114,13 @@ nav {
 
 nav ul li {
   display: inline-block;
+  margin: 3rem;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* min-width: 0; */
+  /* flex-grow: 1; */
+}
 
-  align-items: center;
-  min-width: 0;
-  flex-grow: 1;
+.quiz-box {
+  /* margin-bottom: 20px; */
 }
