@@ -56,10 +56,6 @@ section {
 /* width: 150px; */
 /* } */
 
-.nav-link {
-  justify-content: space-evenly;
-}
-
 nav {
   display: flex;
   position: fixed;
@@ -69,18 +65,24 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: yellow;
+  margin: 0 auto;
+  width: 100%;
 }
 
 nav ul li {
   /* flex-direction: row; */
-  flex: 1;
+  /* flex: 1; */
   display: inline-block;
+  /* margin-right: 5rem; */
   /* justify-content: space-around; */
   /* justify-content: center; */
   /* text-align: center; */
+  align-items: center;
+  min-width: 0;
+  flex-grow: 1;
 }
 
 nav ul {
-  justify-content: space-around;
-  text-align: center;
+  /* justify-content: space-around; */
+  /* text-align: center; */
 }
